@@ -32,6 +32,7 @@ body {
     color: var(--text-dark);
     background-color: var(--white);
     overflow-x: hidden;
+    width: 100%;
 }
 
 h1,
@@ -129,6 +130,11 @@ nav.active {
     transform: translateY(0);
 }
 
+#navbar {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .logo {
     font-family: 'Outfit', sans-serif;
     font-size: 1.6rem;
@@ -212,6 +218,8 @@ nav.active {
     justify-content: space-between;
     background: linear-gradient(135deg, var(--light-blue-bg) 0%, #ffffff 100%);
     min-height: 80vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero-content {
