@@ -402,12 +402,46 @@ footer {
     margin-top: 50px;
 }
 
-.team-card img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
+.team-card {
+    background: white;
+    padding: 35px 20px;
     border-radius: var(--radius-lg);
-    margin-bottom: 20px;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-medium);
+}
+
+.team-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 4px solid var(--light-blue-bg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.service-card .whatsapp-btn {
+    background: var(--light-blue-bg);
+    color: var(--primary-blue) !important;
+    border: 1px solid var(--primary-blue);
+    margin-top: 20px;
+    justify-content: center;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.service-card .whatsapp-btn:hover {
+    background: var(--primary-blue);
+    color: white !important;
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.25);
 }
 
 /* Testimonials */
@@ -788,6 +822,19 @@ footer h4::after {
     .contact {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .footer-grid {
